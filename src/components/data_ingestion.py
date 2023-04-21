@@ -5,6 +5,7 @@ import pandas as pd
 from dataclasses import dataclass
 from src.logger import logging
 from src.exception import CustomException
+from src.components.data_transformation import DATA_TRANSFORMATION
 
 
 
@@ -44,4 +45,7 @@ class DATA_INGESTION :
             
 if __name__=='__main__':
     obj = DATA_INGESTION()
-    d,r = obj.initiate_data_ingestion()            
+    d,r = obj.initiate_data_ingestion()  
+
+    transform = DATA_TRANSFORMATION()
+    data,path = transform.initiate_data_transformation()          
