@@ -271,3 +271,4 @@ def lolo_valid(training_df,model_features,model):
 
         error = RMSE(y_val, y_hat_val)
         lolo_validation_errors[leave_sensor] = error
+    return lolo_validation_errors

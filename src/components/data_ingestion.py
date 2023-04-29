@@ -32,7 +32,7 @@ class DATA_INGESTION :
             test_2 = pd.read_csv('C:/Users/user/low_cost_sensor_calibration/notebook/data/test-set_Nov-Dec.csv')
             logging.info('loaded the data')
             
-            # makinng directory name
+            # making directory name
             os.makedirs(self.ingestion_config.artifact_filepath, exist_ok=True)
             os.makedirs(os.path.dirname(self.ingestion_config.data_file_path), exist_ok=True)
             os.makedirs(os.path.dirname(self.ingestion_config.road_file_path), exist_ok=True)
