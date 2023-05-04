@@ -6,8 +6,8 @@ from src.pipeline.predict_pipeline import calibrator
 from sensor_parameter import sensor_parameters
 from datetime import datetime
 import math
-from utils import load_object
-import json
+
+
 
 
 #create app object
@@ -20,8 +20,7 @@ def index():
 
 @app.post('/calibrate')
 def sensor_calibration_endpoint(sensor_data : sensor_parameters):
-    sensor_data = sensor_data.json()
-    sensor_data = json.load(sensor_data)
+    sensor_data = sensor_data.dict()
     cal = calibrator()
     prediction = cal.calibrate(sensor_data)
     return {'calibrated pm2.5 readings':prediction}

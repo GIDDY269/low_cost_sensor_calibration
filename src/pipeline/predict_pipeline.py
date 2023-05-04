@@ -19,8 +19,8 @@ class calibrator:
             temp = data['temp']
             a_road_500 = data['a_road_500']
             date = datetime.strptime(data['datetime'],format= "%Y-%m-%d %H:%M:%S" )
-            data['Time'] = data['datetime'].dt.hour
-            data['month'] = data['datetime'].dt.month
+            data['Time'] = date.dt.hour
+            data['month'] = date.dt.month
             
             data['sin_time'] = data['Time'].apply(lambda x : math.sin(x)*2*(math.pi/24))
             sin_time = data['sin_time']
@@ -32,7 +32,7 @@ class calibrator:
             data['cos_month'] = data['month'].apply(lambda x : math.cos(x)*2*(math.pi/12))
             cos_month = data['cos_month']
             
-            del data['Datetime','Time','Month']
+            del data['datetime','Time','month']
             #load model
             model = load_object('C:/Users/user/low_cost_sensor_calibration/artifacts/MODEL.pkl')
             prediction = model.predict([[pm_cs,temp,a_road_500,sin_time,cos_time,sin_month,cos_month]])
