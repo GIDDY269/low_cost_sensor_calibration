@@ -12,7 +12,6 @@ from src.logger import logging
 
 
 
-
 #create app object
 app = FastAPI()
 model = load_object('C:/Users/user/low_cost_sensor_calibration/artifacts/MODEL.pkl')
