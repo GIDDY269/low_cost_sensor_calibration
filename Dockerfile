@@ -8,6 +8,5 @@ RUN apt update -y && apt install awscli -y
 
 RUN pip install -r requirements.txt
 
-EXPOSE 8501
 
-CMD ['python3','app.py']
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
