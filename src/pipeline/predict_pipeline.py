@@ -8,7 +8,7 @@ import math
 from utils import load_object
 from datetime import datetime
 
-model = load_object('C:/Users/user/low_cost_sensor_calibration/artifacts/MODEL.pkl')
+model = load_object('/app/artifacts/MODEL.pkl')
 
 class calibrator:
     def __init__(self):

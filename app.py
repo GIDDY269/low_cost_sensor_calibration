@@ -14,7 +14,7 @@ from src.logger import logging
 
 #create app object
 app = FastAPI()
-model = load_object('C:/Users/user/low_cost_sensor_calibration/artifacts/MODEL.pkl')
+
 
 # index route ,opens up automatically on http://127.0.0.1:8000
 @app.get('/')
@@ -29,5 +29,4 @@ def sensor_calibration_endpoint(sensor_data:sensor_parameters):
     prediction = cal.calibrate(sensor_data)
     return {'Calibrated pm 2.5 reading': str(prediction)}
     
-if __name__ == '__main__':
-    uvicorn.run(app,host='127.0.0.1',port=8000)
+
