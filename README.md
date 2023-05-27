@@ -9,13 +9,20 @@ To install the model , clone the repository into your local machine
 
 `git clone git clone https://github.com/GIDDY269/low_cost_sensor_calibration.git`
 
+
+******************
+
 Then, build the docker image;
 `docker build -t low_cost_sensor_calibration .`
+
+************************************************************
 
 Then finally , run the image ;
 `docker run -d--name low_cost_sensor_calibration -p 80:80 low_cost_sensor_calibration`
 
 The app will now be running on port 80. You can access it by opening a web browser and navigating to `http://localhost:80`
+
+********************************************
 
 **Usage**
 
@@ -25,9 +32,13 @@ After accessing the api on your browser, you show be able to see a `welcome` tex
 
 * click on the the try it out button to test the api
 
+****************************
+
 ![second image](C:/Users/user/low_cost_sensor_calibration/images/Screenshot (65).png)
 
 * input all the values for each paremeter and click on `execute`
+
+****************************
 
 ![third image](C:/Users/user/low_cost_sensor_calibration/images/Screenshot (66).png)
 
