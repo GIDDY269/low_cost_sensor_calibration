@@ -28,19 +28,19 @@ The app will now be running on port 80. You can access it by opening a web brows
 
 After accessing the api on your browser, you show be able to see a `welcome` text on your browser.Go to the link at the top your browser and add `/docs` to be able to access the swagger ui
 
-![first_image](https://raw.githubusercontent.com/GIDDY269/low_cost_sensor_calibration/images/C:/Users/user/low_cost_sensor_calibration/images/Screenshot67.png)
+![first_image](https://raw.githubusercontent.com/GIDDY269/low_cost_sensor_calibration/images/Screenshot67.png)
 
 * click on the the try it out button to test the api
 
 ****************************
 
-![second image](https://raw.githubusercontent.com/GIDDY269/low_cost_sensor_calibration/images/C:/Users/user/low_cost_sensor_calibration/images/Screenshot65.png)
+![second image](https://raw.githubusercontent.com/GIDDY269/low_cost_sensor_calibration/images/Screenshot65.png)
 
 * input all the values for each paremeter and click on `execute`
 
 ****************************
 
-![third image](https://raw.githubusercontent.com/GIDDY269/low_cost_sensor_calibration/images/C:/Users/user/low_cost_sensor_calibration/images/Screenshot66.png)
+![third image](https://raw.githubusercontent.com/GIDDY269/low_cost_sensor_calibration/images/Screenshot66.png)
 
 * U should get a result in the response body
 
